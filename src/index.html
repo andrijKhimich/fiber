@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ua">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:title" content="Project name" />
+		<!-- add preview for links -->
+		<meta property="og:image" content="./img/preview.jpg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="627" />
+		<!-- favicons -->
+		<link rel="icon" href="img/favicon/favicon.ico" sizes="any" />
+		<!-- 32×32 -->
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+		<!-- 180×180 -->
+		<link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
+		<!-- main styles -->
+		<link rel="stylesheet" href="./css/style.min.css" />
+		<title>Project | Name</title>
+	</head>
+
+	<body>
+		<div class="global-wrapper">
+			@@include("./html/_header.html")
+			<main class="main">
+				<svg class="icon-social">
+					<use xlink:href="img/sprite-svg/sprite.svg#favicon"></use>
+				</svg>
+			</main>
+			@@include("./html/_footer.html")
+		</div>
+
+		<script src="./js/libs.min.js"></script>
+		<script src="./js/script.min.js"></script>
+	</body>
+</html>
+
+<!-- <svg class="icon-social">
+  <use xlink:href="img/sprite-svg/sprite.svg#favicon"></use>
+</svg> -->
