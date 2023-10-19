@@ -1,0 +1,151 @@
+.testimonials {
+	padding-top: 76px;
+	background-color: $bgColor;
+	&__title {
+		max-width: 810px;
+		margin: 0 auto 40px auto;
+		text-align: center;
+		h2 {
+			margin-bottom: 20px;
+			color: $tittleColor;
+			@include d(768) {
+				margin-bottom: 16px;
+			}
+		}
+		p {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			letter-spacing: -0.016em;
+			flex-wrap: wrap;
+			color: $tittleColor;
+			@include d(768) {
+				font-size: 14px;
+			}
+		}
+	}
+
+	&__content {
+		// margin-top: 60px;
+		position: relative;
+		display: grid;
+		grid-gap: 16px;
+		grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+		grid-auto-rows: 17px;
+		height: 662px;
+		@include d(768) {
+			height: auto;
+			display: block;
+		}
+		&::before {
+			content: '';
+			width: 100%;
+			height: 316px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+			background: linear-gradient(
+				180deg,
+				rgba(244, 241, 242, 0) 1.19%,
+				#f4f1f2 91.54%
+			);
+		}
+	}
+	&__col {
+		// @include d(768)
+		@include d(768) {
+			height: auto;
+			display: block;
+			&:not(:nth-child(-n + 5)) {
+				display: none;
+			}
+		}
+	}
+	&-card {
+		display: inline-flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 8px;
+		padding: 24px;
+		background-color: $white;
+		border-radius: 20px;
+		max-width: 416px;
+		box-shadow: 0px 23px 35px 0px rgba(166, 171, 189, 0.16);
+
+		@include d(768) {
+			margin-bottom: 24px;
+			max-width: 100%;
+			padding: 12px;
+		}
+		&__header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 9px;
+			@include d(768) {
+				margin-bottom: 4px;
+			}
+		}
+
+		&__content {
+			margin-bottom: 7px;
+			p {
+				letter-spacing: -0.016em;
+				line-height: 2em;
+				color: $tittleColor;
+				@include d(768) {
+					font-size: 14px;
+					line-height: 2.28em;
+				}
+			}
+			@include d(768) {
+				margin-bottom: 2px;
+			}
+		}
+		&__footer {
+			p {
+				font-weight: 600;
+				color: $tittleColor;
+				@include d(768) {
+					font-size: 14px;
+					line-height: 2.28em;
+				}
+			}
+		}
+	}
+	&-logo {
+		width: 24px;
+		height: 24px;
+		@include d(768) {
+			width: 28px;
+			height: 28px;
+		}
+	}
+	&-rating {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		@include d(768) {
+			gap: 9px;
+		}
+	}
+}
+
+.rating {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $primary;
+	margin: 0 10px;
+	// display: inline-block;
+	color: $white;
+	width: 48px;
+	height: 32px;
+	border-radius: 32px;
+	img {
+		width: 14px;
+		height: 14px;
+		margin-left: 5px;
+	}
+}

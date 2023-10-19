@@ -1,0 +1,51 @@
+.article-section {
+	margin: 173px 0 157px;
+	@include d(768) {
+		margin: 120px 0;
+	}
+}
+.article {
+	color: $tittleColor;
+	h2,
+	h1 {
+		margin-bottom: 31px;
+	}
+	h6 {
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 1.333em; /* 133.333% */
+		margin-bottom: 25px;
+		@include d(768) {
+			margin-bottom: 20px;
+		}
+	}
+	&__title {
+		margin-bottom: 88px;
+		@include d(768) {
+			margin-bottom: 56px;
+		}
+	}
+	a {
+		text-decoration: underline;
+	}
+	ul {
+		margin: 30px 0 72px 0;
+		@include d(768) {
+			margin: 20px 0 50px;
+		}
+		li {
+			position: relative;
+			padding-left: 23px;
+			&::before {
+				content: '';
+				width: 4px;
+				height: 4px;
+				background-color: $tittleColor;
+				position: absolute;
+				top: 14px;
+				left: 8px;
+				border-radius: 100%;
+			}
+		}
+	}
+}

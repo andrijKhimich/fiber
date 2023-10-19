@@ -13,13 +13,6 @@ html {
 	-webkit-appearance: none;
 	// max-height: 9001em;
 	-webkit-text-size-adjust: 100%; // Prevent adjustments of font size after orientation changes in iOS.
-	font-size: calc(100vw / 1440);
-	@media (max-width: $mob) {
-		font-size: calc(100vw / 360);
-	}
-	@media (min-width: 1440px) {
-		font-size: 1;
-	}
 }
 
 body {
@@ -28,12 +21,9 @@ body {
 	width: 100%;
 	min-width: 320px;
 	margin: 0; // Remove the margin in all browsers.
-	font-family: 'Raleway', sans-serif;
-	color: $black;
-	font-size: 18rem;
-	font-family: $fontFamily;
-	background-color: #f5f4f4;
-
+	font-family: 'Poppins', sans-serif;
+	color: $tittleColor;
+	font-size: 16px;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -46,14 +36,6 @@ body {
 	-webkit-text-size-adjust: 100%;
 	backface-visibility: hidden;
 	text-rendering: geometricPrecision;
-
-	@include d(768) {
-		font-size: 16px;
-	}
-
-	@include d(340) {
-		font-size: 14px;
-	}
 }
 
 // custom scrollbar
@@ -85,36 +67,29 @@ h4,
 h5,
 h6 {
 	margin: 0;
-	font-weight: normal;
-	font-family: 'Vetrino', sans-serif;
-	line-height: 1.08em;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.286em;
 }
 
 h1,
 h2 {
 	font-size: 56px;
-	line-height: 1.08em;
-
+	margin-bottom: 16px;
 	@include d(768) {
 		font-size: 36px;
-	}
-
-	@include d(360) {
-		font-size: 26px;
-	}
-
-	span {
-		color: $primary;
 	}
 }
 
 h3 {
-	font-size: 36px;
-	margin-bottom: 23px;
-
-	@include d(340) {
-		font-size: 28px;
-		margin-bottom: 16px;
+	font-size: 48px;
+	line-height: 1.292em;
+	margin-bottom: 16px;
+	@include d(1024) {
+		font-size: 42px;
+	}
+	@include d(768) {
+		font-size: 36px;
 	}
 }
 
@@ -327,6 +302,8 @@ p,
 li {
 	margin: 0;
 	color: inherit;
+	line-height: 2em;
+	letter-spacing: -0.016em;
 }
 
 ul,
@@ -433,7 +410,7 @@ input {
 }
 
 .container {
-	max-width: 1120px;
+	max-width: 1340px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -473,11 +450,71 @@ main {
 	@extend h6;
 }
 
-// .jarallax {
-// 	position: relative;
-// 	z-index: 0;
-// }
+.btns-row {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	margin: 40px 0 60px 0;
+	position: relative;
+	// transition-delay: 1s;
+	@include d(768) {
+		margin: 32px 0 48px 0;
+		justify-content: center;
+	}
+	&_center {
+		justify-content: center;
+	}
+}
+.btn {
+	text-align: center;
+	display: inline-block;
+}
 
-// .global-wrapper {
-// 	height: 100%;
-// }
+.js-scroll {
+	position: relative;
+	// transition: transform 0.8s ease, opacity 0.8s ease;
+	transition: opacity 0.6s ease 0.2s, transform 0.8s ease 0.3s;
+	will-change: transform;
+	transition-delay: 0.2s;
+	&.in-view {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+	&.in-view-detect {
+		transform: translate(0, 20px);
+		opacity: 0;
+	}
+}
+
+.js-show {
+	position: relative;
+	transition: transform 0.8s ease, opacity 0.8s ease;
+	will-change: transform;
+	// transition-delay: 0.4s;
+	&.in-view {
+		// transform: translate(0, 0);
+		opacity: 1;
+		.plate {
+			transition: transform 0.8s ease, opacity 0.8s ease;
+			transform: scale(1) rotate(0);
+			opacity: 1;
+			&._1 {
+				// transition-delay: s;
+			}
+			&._2 {
+				transition-delay: 0.2s;
+			}
+			&._3 {
+				transition-delay: 0.4s;
+			}
+		}
+	}
+	&.in-view-detect {
+		// transform: translate(0, 20px);
+		opacity: 0;
+		.plate {
+			transform: scale(0.5) rotate(45deg);
+			opacity: 0;
+		}
+	}
+}

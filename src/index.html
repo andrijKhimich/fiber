@@ -1,36 +1,902 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta property="og:title" content="Project name" />
+		<meta property="og:title" content="Fiber" />
 		<!-- add preview for links -->
-		<meta property="og:image" content="./img/preview.jpg" />
+		<meta property="og:image" content="./img/preview.png" />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="627" />
+		<meta name="description" content="Fiber" />
+		<meta name="keywords" content="Fiber" />
+		<meta name="author" content="Fiber" />
 		<!-- favicons -->
 		<link rel="icon" href="img/favicon/favicon.ico" sizes="any" />
 		<!-- 32×32 -->
 		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
 		<!-- 180×180 -->
 		<link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
+
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="img/favicon/apple-touch-icon.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="img/favicon/favicon-32x32.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="img/favicon/favicon-16x16.png" />
+		<!-- <link rel="manifest" href="img/favicon/site.webmanifest" /> -->
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
 		<!-- main styles -->
 		<link rel="stylesheet" href="./css/style.min.css" />
-		<title>Project | Name</title>
+		<title>Fiber</title>
 	</head>
 
 	<body>
 		<div class="global-wrapper">
 			@@include("./html/_header.html")
 			<main class="main">
-				<svg class="icon-social">
-					<use xlink:href="img/sprite-svg/sprite.svg#favicon"></use>
-				</svg>
+				<section class="section hero">
+					<div class="container">
+						<div class="hero__content in-view-detect js-scroll">
+							<h1>Reach your goals faster with Fiber</h1>
+							<p>
+								Take the first step towards a healthier, happier you by
+								acquiring your customized program. Millions of users have
+								reached their goals using Fiber.
+							</p>
+
+							<div class="btns-row">
+								<a href="#" class="btn" aria-label="google link">
+									<img src="./img/app-store.svg" alt="apple store" />
+								</a>
+								<a href="#" class="btn" aria-label="apple store link">
+									<img src="./img/google-play.svg" alt="google-play" />
+								</a>
+							</div>
+						</div>
+						<div class="hero__img in-view-detect js-show">
+							<img src="./img/phone.png" alt="Fiber" class="" />
+							<div class="lemon _1 parallax" data-value="2">
+								<img src="./img/lemon.png" alt="lemon" />
+							</div>
+							<div class="lemon _2 parallax" data-value="2">
+								<img src="./img/lemon.png" alt="lemon" />
+							</div>
+							<div class="leave _1 parallax" data-value="1">
+								<img src="./img/leave-bottom.png" alt="leave" />
+							</div>
+							<div class="leave _2 parallax" data-value="-1">
+								<img src="./img/leave-right.png" alt="leave" />
+							</div>
+							<div class="leave _3 parallax" data-value="1">
+								<img src="./img/leave-left.png" alt="leave" />
+							</div>
+							<div class="plate _1">
+								<img src="./img/plate1.png" alt="leave" />
+							</div>
+							<div class="plate _2">
+								<img src="./img/plate2.png" alt="leave" />
+							</div>
+							<div class="plate _3">
+								<img src="./img/plate3.png" alt="leave" />
+							</div>
+							<div class="dots">
+								<img src="./img/dots-gray.svg" alt="leave" />
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section awards">
+					<div class="container">
+						<div class="awards__row">
+							<div class="awards__col">
+								<div class="awards-card in-view-detect js-scroll">
+									<span><small>#</small>1</span>
+									<p>Macro calculator</p>
+								</div>
+							</div>
+							<div class="awards__col">
+								<div class="awards-card in-view-detect js-scroll">
+									<span>2.1<small> M+</small></span>
+									<p>Happy users</p>
+								</div>
+							</div>
+							<div class="awards__col">
+								<div class="awards-card in-view-detect js-scroll">
+									<span>4.8</span>
+									<p>App rating</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section info">
+					<div class="container">
+						<div class="info__row info__row_top">
+							<div class="info__col">
+								<div class="info__img in-view-detect js-scroll">
+									<img src="./img/girl-top.jpg" alt="img" />
+									<div class="info__details in-view-detect js-scroll">
+										<div class="info-card">
+											<img src="./img/fire-icon.svg" alt="Lose weight" />
+											<p>Lose weight</p>
+										</div>
+										<div class="info-card">
+											<img src="./img/weight-icon.svg" alt="Maintain weight" />
+											<p>Maintain weight</p>
+										</div>
+										<div class="info-card">
+											<img src="./img/graph-icon.svg" alt="Gain weight" />
+											<p>Gain weight</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="info__col">
+								<div class="info__content in-view-detect js-scroll">
+									<h2 class="title-3">Choose your goal</h2>
+									<p>
+										Choosing your goal is a crucial first step on your path to a
+										healthier lifestyle. Whether you're aiming to maintain,
+										lose, or gain weight, this decision will shape your journey.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="info__row info__row_bottom">
+							<div class="info__col">
+								<div class="info__content in-view-detect js-scroll">
+									<h3 class="title-3">Obtain personalized macro guidelines</h3>
+									<p>
+										Get custom macro recommendations tailored to your individual
+										nutritional goals, covering calories, carbs, protein, and
+										fats.
+									</p>
+								</div>
+							</div>
+							<div class="info__col">
+								<div class="info__img in-view-detect js-scroll">
+									<img src="./img/girl-bottom.jpg" alt="img" />
+									<div class="info__graph in-view-detect js-scroll">
+										<img src="./img/graph.svg" alt="graph" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section testimonials">
+					<div class="container">
+						<div class="testimonials__title in-view-detect js-scroll">
+							<h2>Join 2.1 million happy users around the world</h2>
+							<p>
+								14k
+								<span class="rating"
+									>5 <img src="./img/star.svg" alt="star"
+								/></span>
+								reviews on App store and Google play
+							</p>
+						</div>
+						<div class="btns-row btns-row_center in-view-detect js-scroll">
+							<a href="#" class="btn" aria-label="google link">
+								<img src="./img/app-store.svg" alt="apple store" />
+							</a>
+							<a href="#" class="btn" aria-label="apple store link">
+								<img src="./img/google-play.svg" alt="google-play" />
+							</a>
+						</div>
+						<div class="testimonials__content">
+							<div class="testimonials__col in-view-detect js-scroll">
+								<div class="testimonials-card">
+									<div class="testimonials-card__header">
+										<div class="testimonials-rating">
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+										</div>
+										<div class="testimonials-logo">
+											<img src="./img/apple-logo.svg" alt="apple store" />
+										</div>
+									</div>
+									<div class="testimonials-card__content">
+										<p>
+											This app has changed the way I eat. It creates a
+											personalized plan just for you!
+										</p>
+									</div>
+									<div class="testimonials-card__footer">
+										<p>iOS user</p>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials__col in-view-detect js-scroll">
+								<div class="testimonials-card">
+									<div class="testimonials-card__header">
+										<div class="testimonials-rating">
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+										</div>
+										<div class="testimonials-logo">
+											<img src="./img/google-logo.svg" alt="google play" />
+										</div>
+									</div>
+									<div class="testimonials-card__content">
+										<p>
+											This app simplified my nutrition journey. It asked the
+											right questions and provided tailored recommendations.
+											I've never felt better!
+										</p>
+									</div>
+									<div class="testimonials-card__footer">
+										<p>Android user</p>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials__col in-view-detect js-scroll">
+								<div class="testimonials-card">
+									<div class="testimonials-card__header">
+										<div class="testimonials-rating">
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+										</div>
+										<div class="testimonials-logo">
+											<img src="./img/apple-logo.svg" alt="apple store" />
+										</div>
+									</div>
+									<div class="testimonials-card__content">
+										<p>
+											The best calorie counting app straight forward and easy to
+											use!
+										</p>
+									</div>
+									<div class="testimonials-card__footer">
+										<p>iOS user</p>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials__col in-view-detect js-scroll">
+								<div class="testimonials-card">
+									<div class="testimonials-card__header">
+										<div class="testimonials-rating">
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+										</div>
+										<div class="testimonials-logo">
+											<img src="./img/apple-logo.svg" alt="app store" />
+										</div>
+									</div>
+									<div class="testimonials-card__content">
+										<p>
+											This macro calculation app is a lifesaver! It asked me all
+											the right questions about my goals and dietary
+											preferences, and then, like magic, it gave me personalized
+											calorie, fat, protein, and carb recommendations.
+										</p>
+									</div>
+									<div class="testimonials-card__footer">
+										<p>iOS user</p>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials__col in-view-detect js-scroll">
+								<div class="testimonials-card">
+									<div class="testimonials-card__header">
+										<div class="testimonials-rating">
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+										</div>
+										<div class="testimonials-logo">
+											<img src="./img/apple-logo.svg" alt="apple store" />
+										</div>
+									</div>
+									<div class="testimonials-card__content">
+										<p>
+											The app is like a personal nutritionist on my phone. It's
+											user-friendly, precise, and has helped me hit my daily
+											nutrition targets.
+										</p>
+									</div>
+									<div class="testimonials-card__footer">
+										<p>iOS user</p>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials__col in-view-detect js-scroll">
+								<div class="testimonials-card">
+									<div class="testimonials-card__header">
+										<div class="testimonials-rating">
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+										</div>
+										<div class="testimonials-logo">
+											<img src="./img/google-logo.svg" alt="google play" />
+										</div>
+									</div>
+									<div class="testimonials-card__content">
+										<p>
+											This macro calculation app is a game-changer for anyone
+											who wants to take control of their diet. It doesn't just
+											give you numbers; it understands your preferences and
+											lifestyle.
+										</p>
+									</div>
+									<div class="testimonials-card__footer">
+										<p>Android user</p>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials__col in-view-detect js-scroll">
+								<div class="testimonials-card">
+									<div class="testimonials-card__header">
+										<div class="testimonials-rating">
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+										</div>
+										<div class="testimonials-logo">
+											<img src="./img/apple-logo.svg" alt="apple store" />
+										</div>
+									</div>
+									<div class="testimonials-card__content">
+										<p>I highly suggest to use Fiber App! ❤️</p>
+									</div>
+									<div class="testimonials-card__footer">
+										<p>iOS user</p>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials__col in-view-detect js-scroll">
+								<div class="testimonials-card">
+									<div class="testimonials-card__header">
+										<div class="testimonials-rating">
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+										</div>
+										<div class="testimonials-logo">
+											<img src="./img/apple-logo.svg" alt="apple store" />
+										</div>
+									</div>
+									<div class="testimonials-card__content">
+										<p>
+											This macro calculation app is a lifesaver! It asked me all
+											the right questions about my goals and dietary
+											preferences, and then, like magic, it gave me personalized
+											calorie, fat, protein, and carb recommendations.
+										</p>
+									</div>
+									<div class="testimonials-card__footer">
+										<p>iOS user</p>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials__col in-view-detect js-scroll">
+								<div class="testimonials-card">
+									<div class="testimonials-card__header">
+										<div class="testimonials-rating">
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.6518 19.0509L16.8178 22.1754C17.7639 22.748 18.9216 21.9015 18.6726 20.831L17.3033 14.9554L21.8718 10.9969C22.7058 10.2749 22.2577 8.90562 21.1623 8.81849L15.1498 8.30811L12.7971 2.75623C12.3738 1.74792 10.9299 1.74792 10.5066 2.75623L8.15391 8.29566L2.14144 8.80604C1.04601 8.89318 0.597871 10.2625 1.4319 10.9845L6.00038 14.943L4.63108 20.8185C4.38212 21.8891 5.5398 22.7355 6.48586 22.1629L11.6518 19.0509Z"
+													fill="#FAA562" />
+											</svg>
+										</div>
+										<div class="testimonials-logo">
+											<img src="./img/apple-logo.svg" alt="apple store" />
+										</div>
+									</div>
+									<div class="testimonials-card__content">
+										<p>
+											This app has changed the way I eat. It creates a
+											personalized plan just for you!
+										</p>
+									</div>
+									<div class="testimonials-card__footer">
+										<p>iOS user</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section cta">
+					<div class="container">
+						<div class="cta__title in-view-detect js-scroll">
+							<img src="./img/logo-square.svg" alt="Fiber" />
+							<h2>Take care of your health with Fiber</h2>
+							<p>
+								Make your health a top priority by incorporating Fiber into your
+								daily routine. With Fiber, you have a trusted partner in your
+								journey towards a healthier and happier life.
+							</p>
+						</div>
+						<div class="btns-row btns-row_center in-view-detect js-scroll">
+							<a href="#" class="btn" aria-label="google link">
+								<img src="./img/app-store.svg" alt="apple store" />
+							</a>
+							<a href="#" class="btn" aria-label="apple store link">
+								<img src="./img/google-play.svg" alt="google-play" />
+							</a>
+						</div>
+					</div>
+				</section>
 			</main>
 			@@include("./html/_footer.html")
 		</div>
-
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
 		<script src="./js/libs.min.js"></script>
 		<script src="./js/script.min.js"></script>
 	</body>

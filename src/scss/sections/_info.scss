@@ -1,0 +1,192 @@
+.info {
+	padding: 13px 0 125px;
+	@include d(768) {
+		padding: 13px 0 56px 0;
+	}
+	&__row {
+		display: flex;
+		margin: 0 -15px;
+		@include d(768) {
+			flex-wrap: wrap;
+		}
+		&_top {
+			@include d(768) {
+				margin-bottom: 130px;
+			}
+		}
+		&_bottom {
+			.info__content {
+				margin: 220px 0 0 42px;
+				@include d(992) {
+					margin: 180px 0 0 42px;
+				}
+				@include d(768) {
+					margin: 48px 0 0 0;
+				}
+			}
+			.info__img {
+				margin: 80px 53px 32px auto;
+				&::after {
+					background-image: url(../img/dots-yellow.svg);
+					right: -54px;
+					bottom: -57px;
+					left: auto;
+					@include d(768) {
+						display: none;
+					}
+				}
+				@include d(768) {
+					margin: 0 18px 0 auto;
+				}
+				&::before {
+					background-color: $yellowLightColor;
+					right: -32px;
+					left: auto;
+					@include d(768) {
+						right: -18px;
+					}
+				}
+			}
+			@include d(768) {
+				.info__col {
+					&:first-child {
+						order: 1;
+					}
+				}
+			}
+		}
+	}
+	&__col {
+		padding: 0 15px;
+		flex: 0 0 50%;
+		@include d(768) {
+			flex: 0 0 100%;
+		}
+	}
+	&__img {
+		max-width: 463px;
+		position: relative;
+		margin: 40px 0 32px 72px;
+		@include d(992) {
+			margin: 40px 0 32px 50px;
+		}
+		@include d(768) {
+			margin: 0 auto 0 18px;
+			max-width: 100%;
+		}
+		&::before {
+			content: '';
+			width: 95%;
+			height: 89%;
+			border-radius: 40px;
+			background-color: $greenLightColor;
+			position: absolute;
+			z-index: -1;
+			bottom: -32px;
+			left: -32px;
+			@include d(768) {
+				bottom: -18px;
+				left: -18px;
+			}
+		}
+		&::after {
+			content: '';
+			width: 128px;
+			height: 128px;
+			position: absolute;
+			background-image: url(../img/dots-green.svg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			left: -75px;
+			bottom: -50px;
+			z-index: -1;
+			@include d(768) {
+				display: none;
+			}
+		}
+		& > img {
+			border-radius: 40px;
+		}
+	}
+	&__details {
+		position: absolute;
+		right: -23%;
+		top: -35px;
+		@include d(768) {
+			top: auto;
+			bottom: -112px;
+			right: 0;
+		}
+	}
+	&-card {
+		display: flex;
+		align-items: center;
+		border-radius: 24px;
+		background-color: $white;
+		width: 267px;
+		padding: 24px 18px;
+		white-space: nowrap;
+		box-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.08),
+			4px 57px 34px 0px rgba(0, 0, 0, 0.05),
+			7px 100px 40px 0px rgba(0, 0, 0, 0.01),
+			11px 157px 44px 0px rgba(0, 0, 0, 0),
+			-49px 1px 24px 0px rgba(0, 0, 0, 0.05);
+		@include d(992) {
+			padding: 20px 24px;
+		}
+		@include d(768) {
+			width: 216px;
+		}
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+		img {
+			margin-right: 12px;
+			width: 32px;
+			height: 32px;
+		}
+		p {
+			color: $blue;
+			font-weight: 500;
+			font-size: 16px;
+			letter-spacing: -0.016em;
+		}
+	}
+	&__content {
+		max-width: 530px;
+		margin: 155px 0 0 113px;
+		@include d(1280) {
+			margin: 100px 0 0 30px;
+		}
+		@include d(768) {
+			max-width: 100%;
+			text-align: center;
+			margin-top: 145px;
+			margin-left: 0;
+		}
+		p {
+			color: $textColor;
+		}
+	}
+	&__graph {
+		position: absolute;
+		top: -30px;
+		left: -100px;
+		max-width: 270px;
+
+		@include d(992) {
+			max-width: 166px;
+		}
+
+		@include d(768) {
+			top: -67px;
+			max-width: 70%;
+			left: 0;
+		}
+
+		@include d(575) {
+			max-width: 58%;
+		}
+	}
+}

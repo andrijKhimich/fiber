@@ -1,1 +1,49 @@
 // footer
+.footer {
+	background-color: $footerBg;
+	color: $white;
+	&-row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 56px 0;
+		@include d(768) {
+			padding: 39px 0 40px;
+			flex-direction: column;
+		}
+	}
+	&-logo {
+		width: 128px;
+		@include d(768) {
+			margin-bottom: 39px;
+			max-width: 109px;
+		}
+	}
+	&-menu {
+		display: flex;
+		align-items: center;
+		@include d(768) {
+			flex-direction: column;
+		}
+		&__item {
+			&:not(:last-child) {
+				margin-right: 67px;
+				@include d(768) {
+					margin-bottom: 32px;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	&_bottom {
+		border-top: 1px solid rgba($white, 0.1);
+		padding: 24px 0;
+		text-align: center;
+		font-size: 12px;
+		line-height: 2.66em;
+		color: rgba($white, 0.4);
+		@include d(768) {
+			padding: 16px 0;
+		}
+	}
+}
