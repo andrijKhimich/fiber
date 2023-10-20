@@ -23,8 +23,8 @@
 
 .logo {
 	display: inline-block;
-	max-width: 136px;
+	// max-width: 136px;
 	@include d(768) {
-		max-width: 120px;
+		// max-width: 120px;
 	}
 }

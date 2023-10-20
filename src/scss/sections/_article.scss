@@ -28,6 +28,12 @@
 	a {
 		text-decoration: underline;
 	}
+	p {
+		margin-bottom: 16px;
+		span {
+			text-decoration: underline;
+		}
+	}
 	ul {
 		margin: 30px 0 72px 0;
 		@include d(768) {
@@ -45,6 +51,34 @@
 				top: 14px;
 				left: 8px;
 				border-radius: 100%;
+			}
+		}
+	}
+	ol {
+		margin: 30px 0 72px 0;
+		counter-reset: my-awesome-counter;
+		li {
+			counter-increment: my-awesome-counter;
+			position: relative;
+			padding-left: 23px;
+			&::before {
+				content: counter(my-awesome-counter) '. ';
+				position: absolute;
+				left: 5px;
+			}
+		}
+	}
+	table {
+		border-collapse: collapse;
+		margin-bottom: 40px;
+		tr {
+			td,
+			th {
+				border: 1px solid $textColor;
+				padding: 10px 5px;
+				&:last-child {
+					text-align: center;
+				}
 			}
 		}
 	}
