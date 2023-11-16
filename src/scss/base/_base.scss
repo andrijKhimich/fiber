@@ -518,3 +518,17 @@ main {
 		}
 	}
 }
+
+.button {
+	display: inline-block;
+	background-color: $accent;
+	color: $white;
+	border-radius: 40px;
+	padding: 14px 53px;
+	border: 1px solid $accent;
+	transition: color 0.4s ease, background-color 0.4s ease;
+	&:hover {
+		color: $accent;
+		background-color: transparent;
+	}
+}
