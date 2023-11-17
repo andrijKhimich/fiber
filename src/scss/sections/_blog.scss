@@ -1,5 +1,6 @@
 .blog-section {
 	padding: 60px 0 80px;
+	background: linear-gradient(180deg, #f4f1f2 0%, #fff 82.81%);
 	&__title {
 		text-align: center;
 		margin-bottom: 87px;
@@ -52,11 +53,13 @@
 				font-weight: 600;
 				line-height: 1.7em;
 				letter-spacing: -0.25px;
+				margin-bottom: 5px;
 			}
 			span {
 				font-size: 14px;
 				line-height: 2.2em;
 				letter-spacing: -0.25px;
+				color: #535354;
 			}
 		}
 		&__image {
@@ -78,8 +81,18 @@
 .blog {
 	padding: 173px 0 112px;
 	background-color: $bgColor;
+	position: relative;
 	@include d(768) {
 		padding: 120px 0 0 0;
+	}
+	&__decor {
+		position: absolute;
+		top: -80px;
+		right: 0;
+		max-width: 310px;
+		@include d(992) {
+			display: none;
+		}
 	}
 	&__title {
 		max-width: 560px;
