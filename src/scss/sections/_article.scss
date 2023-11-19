@@ -1,7 +1,7 @@
 .article-section {
 	margin: 173px 0 157px;
 	@include d(768) {
-		margin: 120px 0;
+		margin: 120px 0 60px 0;
 	}
 }
 .article {
@@ -22,7 +22,7 @@
 	&__title {
 		margin-bottom: 88px;
 		@include d(768) {
-			margin-bottom: 56px;
+			margin-bottom: 20px;
 		}
 	}
 	a {

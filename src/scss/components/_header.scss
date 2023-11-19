@@ -48,6 +48,9 @@
 			}
 			.btn {
 				height: 40px;
+				@include d(992) {
+					height: 50px;
+				}
 				@include d(375) {
 					height: auto;
 				}
