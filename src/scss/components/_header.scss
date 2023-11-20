@@ -111,9 +111,11 @@
 				&__item {
 					border-bottom: 1px solid #dcdcdc;
 					width: 100%;
-
+				}
+				&__link {
 					padding-right: 22px;
 					position: relative;
+					width: 100%;
 					&::before {
 						content: '';
 						width: 10px;
