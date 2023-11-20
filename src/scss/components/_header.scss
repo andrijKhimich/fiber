@@ -111,7 +111,24 @@
 				&__item {
 					border-bottom: 1px solid #dcdcdc;
 					width: 100%;
-					// padding-right: 22px;
+
+					padding-right: 22px;
+					position: relative;
+					&::before {
+						content: '';
+						width: 10px;
+						height: 15px;
+						position: absolute;
+						top: 18px;
+						right: 5px;
+						background-size: cover;
+						background-repeat: no-repeat;
+						background-position: center;
+						background-image: url(../img/arrow.svg);
+						@include d(768) {
+							top: 19px;
+						}
+					}
 				}
 			}
 		}
@@ -129,6 +146,7 @@
 	@include d(768) {
 		width: 120px;
 		flex: 0 0 120px;
+		margin-top: 0;
 		// max-width: 120px;
 	}
 }
